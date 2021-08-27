@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        .container{
+            position: relative;
+            width: 600px;
+            height: 400px;
+        }
+        .container2{
+            position: relative;
+            width: 600px;
+            height: 400px;
+        }
+        .img, img{
+            width: 100%;
+            height: 100%;
+        }
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 0;
+            top: 0;
+            bottom: 0;
+            right: 100%;
+            transition: 1000ms ease-in-out ;
+            overflow: hidden;
+            background-color: black;
+            left: 0;
+        }
+        .container:hover .overlay{
+            width: 100%;
+            right: 0;
+        }
+        .text{
+            position: absolute;
+            font-family: poppins;
+            font-size: 80%;
+            left: 17.5%;
+            top: 42.5%;
+            color:#C961A8;
+        }
+        .text2{
+            position: absolute;
+            font-family: poppins;
+            font-size: 80%;
+            left: 17.5%;
+            top: 40%;
+            color:#C961A8;
+        }
+        .overlay2{
+            position:absolute;
+            height: 100%;
+            width:0;
+            bottom:0;
+            top:0;
+            left:100%;
+            transition: 1000ms ease-in-out;
+            overflow: hidden;
+            background-color: black;
+            right: 0;
+        }
+        .container2:hover .overlay2{
+            width: 100%;
+            left: 0;
+        }
+        table{
+            margin-left: 50px;
+            column-gap: 40px;
+        }
+        p{
+            text-align: justify;
+            font-size: 20px;
+            font-family: Poppins;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem, ipsum.</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam placeat tempora repellat labore iusto temporibus quas et dolore numquam rem odio doloremque explicabo eligendi, magni repellendus voluptate asperiores officiis fuga similique voluptas! Quod qui provident ipsum eos beatae rem numquam nesciunt, illum temporibus, pariatur esse ad rerum. Laboriosam atque iste dolorum illo possimus maiores maxime esse ratione reprehenderit reiciendis at, delectus fugit odit hic porro temporibus nostrum repellendus eius, optio minima quidem dolor officiis! Dolorum aut eius, autem alias numquam mollitia debitis quod ab cum, velit omnis veniam perspiciatis voluptatum expedita molestias impedit sint officia dolore deleniti nemo ipsa. Quo?</p>
+    <br>
+    <table>
+        <td>
+            <div class="container">
+                <div class="img">
+                    <img src="./images/coding.jpg">
+                </div>
+                <a href="https://www.lipsum.com/">
+                    <div class="overlay">
+                        <div class="text">
+                            <h1>Get fake text on Lorem Ipsum.</h1>
+                        </div>
+                    </div>
+                </a>   
+            </div>
+        </td>
+        <td>
+            <div class="container2">
+                <div class="img2">
+                    <img src="./images/codddding.jpg">
+                </div>
+                <a href="https://www.unsplash.com/">
+                    <div class="overlay2">
+                        <div class="text2">
+                            <h1>Get high resolution images on Unsplash.com.</h1>
+                        </div>
+                    </div>
+                </a>   
+            </div>
+        </td>
+    </table>
+    <br>
+    <h1>Lorem Ipsum</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias nihil accusantium nisi pariatur numquam tempora libero voluptatibus, soluta nemo qui aliquid aliquam voluptatum beatae, tenetur voluptate illo? Repellat quia nesciunt obcaecati molestiae voluptate assumenda, fugiat fuga eos rem qui? Placeat quis provident accusamus labore. Eveniet laboriosam voluptates ex deserunt a cumque perferendis. Vel inventore natus illum, ducimus iure facere adipisci vitae assumenda necessitatibus modi minus qui illo, eveniet soluta impedit! Unde sit laudantium numquam deleniti ipsum, omnis sint possimus facere id quibusdam nemo enim itaque voluptatum repellat voluptas, explicabo veritatis perferendis. Tempora delectus nobis rem perferendis dolore et libero aut nesciunt ullam totam! Id maxime eum consequatur tempore aspernatur temporibus esse aliquid neque officia quam, doloribus dolor deserunt officiis nemo, amet, architecto dolores asperiores et. Unde molestias deserunt eius deleniti reprehenderit sit atque impedit eveniet magni dicta similique, veritatis corporis. Sed minima nostrum, doloremque beatae dignissimos aliquid dolore corporis eos blanditiis illum, cupiditate nulla! Provident aperiam harum fuga, quo nemo ducimus sapiente eius ut, soluta reprehenderit laborum dolorem perspiciatis. Ab optio, quia dolorem doloremque aliquam voluptatibus eius, earum impedit eum perspiciatis hic consequatur sed dignissimos reiciendis repellendus numquam ullam nulla ipsa nesciunt libero enim asperiores. Blanditiis repellat soluta eveniet beatae!</p>
+</body>
+</html>
